@@ -7,10 +7,25 @@
 </head>
 <body>
     <!-- Imagenes -->
+    <p><a href="../Texto y enlaces/index.html">Volver al incio</a></p>
+
+    <img src="girl.jpg" 
+              srcset="banana.jpg 500w,
+              dog.jpg 2x 800w" >
+
     <h1>Hello! My name is Mongolito</h1>
     <img src="mongolito.png" alt="Mongolito png">
     <h1>Welcome to my web site</h1>
     <img src="mongolito.svg" alt="Mongolito svg">
+    <!-- Atajo para volver al inicio del index de la carpeta Texto y enlaces -->
+    
+    <!-- PICTURE  -->
+    <picture>
+        <img src="girl.jpg" alt="Foto de una chica">
+        <source media="(min-width: 800px)" srcset="dog.jpg">
+            <source media="(min-width: 500px)" srcset="banana.jpg">
+                
+    </picture>
     
 </body>
 </html>
