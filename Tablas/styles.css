@@ -1,0 +1,20 @@
+table {
+    /* border-collapse: collapse: ; sirve para jumtar las lineas sin quedar espacios; */
+    border-collapse: collapse;
+}
+
+td {
+    border: 1px solid rgb(11, 190, 176);
+}
+
+th {
+    background: rgb(9, 140, 248);
+    color: rgb(255, 255, 255);
+}
+
+td, th {
+    /* text-align: center; sirve para poner texto en el centro */
+    text-align: center;
+    padding: 0.5em;
+}
+
