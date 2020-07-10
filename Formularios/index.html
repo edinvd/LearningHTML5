@@ -6,6 +6,136 @@
     <title>Formulario</title>
 </head>
 <body>
-    
+    <h1>Formularios</h1>
+    <!-- form biene de formularios -->
+    <form>
+        <fieldset>
+            <legend>Tus datos personales</legend>
+            <div>
+                <!-- <label>Ingrese su nombre de usuario
+                    <-- <input type="text"> es igual que <input> es de tipo texto ->
+                    <input id="username" name="username">
+                </label> -->
+                <input id="username" placeholder="Nombre de usuario"required >
+            </div>
+            <div>
+                <label>
+                    Ingrese su correo
+                    <input type="email" name="" id="" required>
+                </label>
+            </div>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Tus datos en la plataforma</legend>
+            <div>
+                <label>
+                    Ingrese su contraseña
+                    <input id="password" type="password" name="password" required>
+                </label>
+            </div>
+            <div>
+                <label>
+                    Ingrese su numero
+                    <!-- Primer ejemplo para que el usuario elija la cantidad -->
+                    <!-- <input type="number" name="number" id=""> -->
+                    
+                    <!-- Segundo ejemplo aqui es para nosotros elegir la cantidad -->
+                    <input type="number" name="number" id="" value="2" readonly> 
+                </label>
+            </div>
+            <div>
+                <label>
+                    Ingrese su fecha de nacimiento
+                    <input type="date" name="date">
+                </label>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Tus pasatiempos</legend>
+            <label><input type="checkbox" name="checkbox">Cine</label>
+            <label><input type="checkbox" name="checkbox">Deporte</label>
+            <label><input type="checkbox" name="checkbox">Musica</label>
+            <label><input type="checkbox" name="checkbox">Peliculas</label>
+        </fieldset>
+        <fieldset>
+            <legend>Tu género</legend>
+            <label><input type="radio" name="gender">Hombre</label>
+            <label><input type="radio" name="gender">Mujer</label>
+            <label><input type="radio" name="gender">Prefiero no decirlo</label>
+        </fieldset>
+        <fieldset>
+            <legend>Select y Opciones</legend>
+            <label for="country">Escoje tu País</label>
+            <select name="country" id="country">
+                <optgroup label="America">
+                    <option value="peru">Perú</option>
+                    <option value="colombia">Colombia</option>
+                    <option value="venezuela">Venezuela</option>
+                    <option value="bolivia">Bolivia</option>
+                    <option value="ecuador">Ecuador</option>
+                    </optgroup>
+                <optgroup label="Europa">
+                    <option value="albania">Albania</option>
+                    <option value="alemania">Alemania</option>
+                    <option value="andorra">Andorra</option>
+                    <option value="armenia">Armenia</option>
+                    <option value="austria"> Austria</option>
+                    <option value="azerbaiyán">Azerbaiyán</option>
+                    <option value="bélgica">Bélgica</option>
+                    <option value="bielorrusia">Bielorrusia</option>
+                    <option value="bosnia">Bosnia</option>
+                    <option value="bulgaria">Bulgaria</option>
+                    <option value="chipre">Chipre</option>
+                    <option value="croacia">Croacia</option>
+                    <option value="dinamarca">Dinamarca</option>
+                    <option value="eslovaquia">Eslovaquia</option>
+                    <option value="eslovenia">Eslovenia</option>
+                    <option value="espana">España</option>
+                    <option value="estonia">Estonia</option>
+                    <option value="finlandia">Finlandia</option>
+                    <option value="francia">Francia</option>
+                    <option value="georgia">Georgia</option>
+                    <option value="grecia">Grecia</option>
+                    <option value="hungría">Hungría</option>
+                    <option value="irlanda">Irlanda</option>
+                    <option value="islandia">Islandia</option>
+                    <option value="italia">Italia</option>
+                    <option value="letonia">Letonia</option>
+                    <option value="liechtenstein">Liechtenstein</option>
+                    <option value="lituania">Lituania</option>
+                    <option value="luxemburgo">Luxemburgo</option>
+                    <option value="macedoniadelnorte">Macedonia del Norte</option>
+                    <option value="malta">Malta</option>
+                    <option value="moldavia">Moldavia</option>
+                    <option value="mónaco">Mónaco</option>
+                    <option value="montenegro">Montenegro</option>
+                    <option value="noruega">Noruega</option>
+                    <option value="polonia">Polonia</option>
+                    <option value="portugal">Portugal</option>
+                    <option value="reino Unido">Reino Unido</option>
+                    <option value="república Checa">República Checa</option>
+                    <option value="rumania">Rumania</option>
+                    <option value="rusia">Rusia</option>
+                    <option value="san Marino">San Marino</option>
+                    <option value="serbia">Serbia</option>
+                    <option value="suecia">Suecia</option>
+                    <option value="suiza">Suiza</option>
+                    <option value="ucrania">Ucrania</option>
+                </optgroup>
+            </select>    
+        </fieldset>
+        <fieldset><legend>Comentarios</legend>
+            <label>
+                <textarea name="message" id="" cols="30" rows="10" placeholder="Escribe tu comentario" ></textarea>
+            </label>
+        
+        </fieldset>
+        <input type="submit" value="Iniciar Sesion">
+        <!-- <button>Enviar</button> -->
+    </form>
+    <script>
+        document.getElementById('password').addEventListener('keyup', e => {console.log(e.target.value)})
+    </script>
 </body>
 </html>
